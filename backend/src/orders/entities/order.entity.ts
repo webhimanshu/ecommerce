@@ -13,7 +13,7 @@ export class Order {
   @PrimaryGeneratedColumn('uuid')
   id: number;
 
-  @ManyToOne(() => Customer, (customer) => customer.order)
+  @ManyToOne(() => Customer, (customer) => customer.orders)
   customer: Customer;
 
   @CreateDateColumn()

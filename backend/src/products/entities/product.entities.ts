@@ -23,7 +23,7 @@ export enum productCategory {
 @Entity('products')
 export class Product {
   @PrimaryGeneratedColumn('uuid')
-  id: number;
+  id: string;
 
   @Column({
     length: 255,

@@ -30,7 +30,7 @@ export class Customer {
   user: User;
 
   @OneToMany(() => Order, (order) => order.customer)
-  order: Order;
+  orders: Order[];
 
   @CreateDateColumn()
   createdAt: Date;
